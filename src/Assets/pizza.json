@@ -1,0 +1,102 @@
+[
+    {
+      "id": 0,
+      "imageUrl": "https://ninjachef.ru/upload/resize_cache/iblock/37e/380_2000_1/37ea3ea4ab67ffb955045186e6e3566b.jpg",
+      "title": "Пепперони Фреш с перцем",
+      "types": [0, 1],
+      "sizes": [26, 30, 40],
+      "price": 803,
+      "category": 0,
+      "rating": 4
+    },
+    {
+      "id": 1,
+      "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/3ef50ae6706e4988bb7b3d16cd6990ee_1875x1875.jpeg",
+      "title": "Сырная",
+      "types": [0],
+      "sizes": [26, 40],
+      "price": 245,
+      "category": 0,
+      "rating": 6
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://kitchenfamily.ru/thumb/2/B85LMbkxGYkUkZ-1gmY07Q/r/d/barbekyu.png",
+      "title": "Цыпленок барбекю",
+      "types": [0],
+      "sizes": [26, 40],
+      "price": 295,
+      "category": 1,
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/11ef1eb09c123070bf5a42eb2ca7e00f_1875x1875.jpeg",
+      "title": "Кисло-сладкий цыпленок",
+      "types": [1],
+      "sizes": [26, 30, 40],
+      "price": 275,
+      "category": 2,
+      "rating": 2
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/11eef45fe3194050a7a363a7069620c6_584x584.jpeg",
+      "title": "Чизбургер-пицца",
+      "types": [0, 1],
+      "sizes": [26, 30, 40],
+      "price": 415,
+      "category": 3,
+      "rating": 8
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://cdn-kz3.foodpicasso.com/assets/2023/11/27/7e7e0e2f9beaea0c8c675535231bb01e---png_1000x_103c0_convert.png",
+      "title": "Крэйзи пепперони",
+      "types": [0],
+      "sizes": [30, 40],
+      "price": 580,
+      "category": 2,
+      "rating": 2
+    },
+    {
+      "id": 6,
+      "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/a96e936c158249e18c831bbcce677065_1875x1875.jpeg",
+      "title": "Пепперони",
+      "types": [0, 1],
+      "sizes": [26, 30, 40],
+      "price": 675,
+      "category": 1,
+      "rating": 9
+    },
+    {
+      "id": 7,
+      "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/97d4780c67b14d66a29fcdfaeadc56be_1875x1875.jpeg",
+      "title": "Маргарита",
+      "types": [0, 1],
+      "sizes": [26, 30, 40],
+      "price": 450,
+      "category": 4,
+      "rating": 10
+    },
+    {
+      "id": 8,
+      "imageUrl": "https://images.spasibovsem.ru/catalog/original/pitstsa-dodo-pitstsa-chetyre-sezona-otzyvy-1593265552.jpg",
+      "title": "Четыре сезона",
+      "types": [0, 1],
+      "sizes": [26, 30, 40],
+      "price": 395,
+      "category": 5,
+      "rating": 10
+    },
+    {
+      "id": 9,
+      "imageUrl": "https://sun9-55.userapi.com/impg/c855636/v855636675/2265ce/CtbBfUxr87k.jpg?size=520x0&quality=95&sign=95da8c9bb3a743272923ab21b3907cd4",
+      "title": "Овощи и грибы",
+      "types": [0, 1],
+      "sizes": [26, 30, 40],
+      "price": 285,
+      "category": 5,
+      "rating": 7
+    }
+  ]

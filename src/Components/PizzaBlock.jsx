@@ -1,26 +1,53 @@
-function PizzaBlock (props) {
+
+import { useState } from "react";
+
+
+
+
+
+function PizzaBlock ({tittle, price, image, sizes, types}) {
+
+    const [PizzaCount, setPizzaCount] = useState(0);
+    const [activeType, setActiveType] = useState(0);
+    const [activeSize, setActiveSize] = useState(0);
+    const onClickType = (index) => {
+          setActiveType(index)
+    }
+
+    const onClickSize = (index) => {
+          setActiveSize(index);
+    }
+
+    const onClickAddButton = () => {
+        setPizzaCount(
+            PizzaCount + 1
+        )
+    }
+    const typeNames = ['Тонкое','Традиционное']
+
     return (
-        <div class="pizza-block">
+        <div className="pizza-block">
         <img
-          class="pizza-block__image"
-          src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg"
+          className="pizza-block__image"
+          src={image}
           alt="Pizza"
         />
-        <h4 class="pizza-block__title">{props.tittle}</h4>
-        <div class="pizza-block__selector">
+        <h4 className="pizza-block__title">{tittle}</h4>
+        <div className="pizza-block__selector">
           <ul>
-            <li class="active">тонкое</li>
-            <li>традиционное</li>
+              {
+                types.map((value, index) => <li onClick={() => onClickType(index)} className={activeType === index ? "active" : ''}>{typeNames[value]}</li>)
+              }
           </ul>
           <ul>
-            <li class="active">26 см.</li>
-            <li>30 см.</li>
-            <li>40 см.</li>
+              {
+                sizes.map((value,index) => <li onClick={() => onClickSize(index)} className={activeSize === index ? "active" : ''}>{value}см.</li>)
+              }
           </ul>
         </div>
-        <div class="pizza-block__bottom">
-          <div class="pizza-block__price"> от {props.price} сом</div>
-          <div class="button button--outline button--add">
+        <div className="pizza-block__bottom">
+          <div className="pizza-block__price"> от {price} сом</div>
+          <button onClick={onClickAddButton} className="button button--outline button--add">
             <svg
               width="12"
               height="12"
@@ -34,8 +61,8 @@ function PizzaBlock (props) {
               />
             </svg>
             <span>Добавить</span>
-            <i>2</i>
-          </div>
+            <i>{PizzaCount}</i>
+          </button>
         </div>
       </div> 
     )
