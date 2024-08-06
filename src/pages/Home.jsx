@@ -32,9 +32,9 @@ import { useState } from 'react';
           <h2 className="content__title">Все пиццы</h2>
           <div className="content__items">
               {
-               items.map((value) => 
+               items.map((value, index) => 
                   <PizzaBlock
-                  key={value.id}
+                  key={index}
                   tittle={value.title}
                   price={value.price}
                   image={value.imageUrl}
