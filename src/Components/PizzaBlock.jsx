@@ -1,10 +1,6 @@
 
 import { useState } from "react";
 
-
-
-
-
 function PizzaBlock ({tittle, price, image, sizes, types}) {
 
     const [PizzaCount, setPizzaCount] = useState(0);
@@ -26,7 +22,7 @@ function PizzaBlock ({tittle, price, image, sizes, types}) {
     const typeNames = ['Тонкое','Традиционное']
 
     return (
-        <div className="pizza-block">
+          <div className="pizza-block">
         <img
           className="pizza-block__image"
           src={image}
@@ -36,12 +32,14 @@ function PizzaBlock ({tittle, price, image, sizes, types}) {
         <div className="pizza-block__selector">
           <ul>
               {
-                types.map((value, index) => <li onClick={() => onClickType(index)} className={activeType === index ? "active" : ''}>{typeNames[value]}</li>)
+              types && types.map((value, index) => <li key={value} onClick={() => onClickType(index)} className={activeType === index ? "active" : ''}>{typeNames[value]}</li>)   
               }
           </ul>
           <ul>
               {
-                sizes.map((value,index) => <li onClick={() => onClickSize(index)} className={activeSize === index ? "active" : ''}>{value}см.</li>)
+               
+             sizes && sizes.map((value,index) => <li key={value} onClick={() => onClickSize(index)} className={activeSize === index ? "active" : ''}>{value}см.</li>)
+
               }
           </ul>
         </div>
@@ -65,6 +63,7 @@ function PizzaBlock ({tittle, price, image, sizes, types}) {
           </button>
         </div>
       </div> 
+
     )
 }
 export default PizzaBlock;
