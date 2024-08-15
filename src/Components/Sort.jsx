@@ -1,18 +1,18 @@
 import { useState } from "react";
 
-function Sort ({sortType, onClickSort}){
+function Sort ({sortType, onChangeSort}){
   const [open, setOpen] = useState(false)
-  const list = [
-    'Популярности',
-    'Цене',
-    'Алфавиту',
-  ]
+  const list =
+  [
+   {name:'популярности', sortProperty:'rating'},
+   {name:'цене', sortProperty: 'price'},
+   {name:'алфавиту', sortProperty:'tittle'},
+  ];
 
-
-
-
-
-
+const onClickListItem = (obj) => {
+  onChangeSort(obj)
+  setOpen(false)
+}
 
     return(
       <div className="sort">
@@ -30,20 +30,21 @@ function Sort ({sortType, onClickSort}){
           />
         </svg>
         <b>Сортировка по:</b>
-        <span onClick={()=> setOpen(!open)}>{list[sortType]}</span>
+        <span onClick={()=> setOpen(!open)}>{sortType.name}</span>
       </div>
   {
     open && <div className="sort__popup">
     <ul>
         {
-          list.map((value, index)=>(
-            <li
-            onClick={() => onClickSort(index)}
-            key={list}
-            className={sortType === index ? "active" : ''}
+          list.map((obj, index)=>(
+            <li 
+            onClick={() => onClickListItem(obj)}
+            key={index}
+            className={sortType.name === obj.name ? "active" : ''}
             >
-              {value}
+              {obj.name}
             </li>
+            
           ))
         }
     </ul>

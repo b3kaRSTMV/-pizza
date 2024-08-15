@@ -2,9 +2,9 @@ import React from "react";
 import {Routes, Route} from "react-router-dom";
 import "./scss/app.scss";
 import  Header from "./Components/Header";
-import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Cart from "./pages/Cart";
+import Home from "./pages/Homee";
 
 
 
